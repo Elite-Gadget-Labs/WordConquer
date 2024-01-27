@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "WordConquer",
-  description: "App for Teaching Vocabulary for Dyslexic Students",
+  title: "EcoRoute",
+  description: "App for optimizing recycling routes",
 };
 
 export default function RootLayout({
@@ -24,11 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.variable}>
         <Theme appearance="light" accentColor="violet">
-          <NavBar />
           <main className="p-5">{children}</main>
-          <footer className="text-center p-2 border-t bg-slate-100">
-            © {new Date().getFullYear()} WordConquer
-          </footer>
         </Theme>
       </body>
     </html>

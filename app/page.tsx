@@ -1,9 +1,11 @@
-import Image from "next/image";
+"use client";
+import React from "react";
+import LinkButton from "./LinkButton";
 
 export default function Home() {
   return (
     <div>
-      <h1>Word Conquer</h1>
+      <LinkButton title={"Start Test"} link={"/quiz"} />
     </div>
   );
 }
