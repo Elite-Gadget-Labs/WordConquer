@@ -1,4 +1,4 @@
-export const hardcodedWords = [
+export const words = [
     {
         "title": "concatenate",
         "pronounciation": "kənˈkætɪˌneɪt",

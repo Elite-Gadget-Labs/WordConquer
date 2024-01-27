@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   CardHeader,
@@ -14,18 +15,14 @@ interface pattern {
 }
 
 interface WordCardProps {
-  word: {
     title: string;
     pronounciation: string;
     meaning: string;
     letterCount: number;
     patterns: pattern[];
-  };
 }
 
-const WordCard = ({
-  word: { title, pronounciation, meaning, letterCount, patterns },
-}: WordCardProps) => {
+const WordCard = ({ title, pronounciation, meaning, letterCount, patterns }: WordCardProps) => {
   return (
     <>
       <Card className="bg-[#f5f5f5] dark:bg-[#2d2d2d] text-[#333] dark:text-[#ccc] w-full max-w-md mx-auto">
@@ -37,10 +34,8 @@ const WordCard = ({
           </div>
         </CardHeader>
         <CardFooter className="flex justify-end items-center">
-          <Button size="icon" variant="ghost">
-            <SpeakerIcon />
-            <span className="sr-only">Pronounce</span>
-          </Button>
+          <SpeakerIcon />
+          <span className="sr-only">Pronounce</span>
         </CardFooter>
       </Card>
     </>
